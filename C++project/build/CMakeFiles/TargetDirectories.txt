@@ -1,0 +1,7 @@
+/Users/lyt/GitHive/ass3/build/CMakeFiles/catch2_main.dir
+/Users/lyt/GitHive/ass3/build/CMakeFiles/gdwg_graph.dir
+/Users/lyt/GitHive/ass3/build/CMakeFiles/client.dir
+/Users/lyt/GitHive/ass3/build/CMakeFiles/ctest.dir
+/Users/lyt/GitHive/ass3/build/CMakeFiles/test.dir
+/Users/lyt/GitHive/ass3/build/CMakeFiles/edit_cache.dir
+/Users/lyt/GitHive/ass3/build/CMakeFiles/rebuild_cache.dir
