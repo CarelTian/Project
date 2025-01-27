@@ -18,17 +18,14 @@ type ListNode struct {
     Next *ListNode
 }
 func main() {
-	// if len(os.Args) < 2 {
-	// 	fmt.Fprintf(os.Stderr, "Usage: mrcoordinator inputfiles...\n")
-	// 	os.Exit(1)
-	// }
+	 if len(os.Args) < 2 {
+	 	fmt.Fprintf(os.Stderr, "Usage: mrcoordinator inputfiles...\n")
+		os.Exit(1)
+	 }
 
-	// m := mr.MakeCoordinator(os.Args[1:], 10)
-	// for m.Done() == false {
-	// 	time.Sleep(time.Second)
-	// }
-	var s []int
-	s = append(s, 1)
-	s=s[1:]
-	fmt.Println(s)
+	 m := mr.MakeCoordinator(os.Args[1:], 10)
+	 for m.Done() == false {
+ 	 time.Sleep(time.Second)
+	 }
+
 }
