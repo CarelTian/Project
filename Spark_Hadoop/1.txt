@@ -1,0 +1,9 @@
+/Users/lyt/workdir/hadoop-3.3.6/share/hadoop/tools/lib
+python3 mr_CoTermNSStripe.py -r hadoop hdfs:///user/lyt/input/pg100.txt -o hdfs:///user/lyt/output1/
+
+hadoop jar /Users/lyt/workdir/hadoop-3.3.6/share/hadoop/tools/lib/hadoop-streaming-*.jar \
+-files CoTermNSStripe_mapper.py,CoTermNSStripe_reducer.py \
+-input input \
+-output output \
+-mapper CoTermNSStripe_mapper.py \
+-reducer CoTermNSStripe_reducer.py
