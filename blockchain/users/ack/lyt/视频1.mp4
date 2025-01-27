@@ -1,0 +1,33 @@
+a=[18, 17, 13, 19, 15, 11, 20, 12, 33, 25]
+n=len(a)
+tree=[0]*n
+class BIT():
+    def __init__(self,num:list):
+        self.num=num
+        self.n=len(num) + 1
+        self.tree=[0]*self.n
+        for i,value in enumerate(num):
+            idex=i+1
+            self.add(idex,value)
+    def update(self,i:int,x:int):
+        idex=i+1
+        cha=x-self.num[i]
+        self.add(idex,cha)
+
+    def sum(self,i:int)->int:
+        idex=i+1
+        ans=0
+        while idex>0:
+            ans+=self.tree[idex]
+            idex-=self.lowbit(idex)
+        return ans
+
+    def add(self,i,x):
+        while i<=self.n:
+            self.tree[i]+=x
+            i+=self.lowbit(i)
+    def lowbit(self,x:int)->int:
+        return x & -x
+
+t=BIT(a)
+print(t.sum(9))

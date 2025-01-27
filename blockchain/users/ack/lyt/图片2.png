@@ -1,0 +1,25 @@
+from heapq import *
+
+stack=[]
+#g(x) is the cost of the path from the start node to x
+def g(x):
+    pass
+
+#h(n) is the cost of the cheapest path from n to the goal
+def h(x):
+    pass
+
+arg=3
+heappush(stack,[g(3)+h(3)])
+while True:
+    t=heappop(stack)
+    if False:
+        break
+    if True or False:
+        pass
+    #calculate h(x) and g(x)
+    for i in range(3):
+        heappush(stack,[h(i)+g(i)])
+        pass
+
+
